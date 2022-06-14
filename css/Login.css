@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('../font/Comfortaa/static/Comfortaa-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../font/Quicksand/Quicksand-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    font: 18px/36px  arial, sans-serif;
+    background-image: url(../gambar/Background/Login.jpg);
+    background-repeat: repeat-y;
+    background-size:cover;
+    font-family: 'Quicksand';
+    margin: 0;
+    padding: 0;
+}
+.container{
+    top: 20%;
+    position: absolute;
+    text-align: center;
+}
+
+.icon{
+    width: 500px;
+    height: 180px;
+    margin: 100px auto;
+    background-image: url(../gambar/Background/iconLogin.png);
+    background-size: cover;
+}
+.login{
+    padding: 50px;
+    margin: 100px auto;
+    width: 400px;
+    height: 180px;
+}
+h1{
+    width: 250px;
+    margin: auto;
+    font-family:  'Comfortaa';
+    border-radius: 50px;
+    background-color: rgb(79,181,244);
+}
+.container table button{
+    height: 30px;
+    color: white;
+    background-color: rgb(79,181,244);
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    box-shadow: 0 9px #999;
+    width: 200px;
+    margin: 5px;
+}
+.container table button:hover{
+    background-color: red;
+}
+.container table button:active{
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px); 
+       
+}
+.col-12 {
+    width: 100%;
+}
+.container table{
+    margin: auto;
+}
+label{
+    font-size: 18px;
+}
+.container table input[type="email"], .container table input[type="password"] {
+    height: 25px;
+    border-color: rgb(79,181,244);
+    border-radius: 10px;
+    margin: 5px;
+}
+.container a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px;
+    font-size: 13.5px;
+}
+.container a:hover{
+    color: red;
+    text-decoration: underline;
+}
+.container a:active{
+    color: blue;
+}
+.berhasil{
+    margin: 10px;
+    background-color: rgba(74, 168, 74, .5);
+    border-radius: 50px;
+}
+.gagal{
+    margin: 10px;
+    background-color: rgba(235, 80, 80, 0.5);
+    border-radius: 50px;
+}

@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('../font/Comfortaa/static/Comfortaa-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    margin:auto;
+    font-family: arial;
+    font-family:  'Comfortaa';
+    font-size: 6.5em;
+    font-weight: bold;
+    background-image: url(../gambar/Background/Pengembang.jpg);
+}
+
+div {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+.teks6 {
+    font-weight: normal;
+    color: white;
+    text-shadow: 0 0 10px #363636, 
+                 0 0 20px #363636, 
+                 0 0 30px #363636, 
+                 0 0 40px #4fb8f6, 
+                 0 0 70px #4fb8f6, 
+                 0 0 80px #4fb8f6;
+}
+a{
+    font-size: 30px;
+}
+p{
+    font-size: 50px;
+}
+.text{
+    font-size: 30px;
+}
+a{
+    display: block;
+    margin-bottom: 30px;
+    color:white;
+}
+a:hover{
+    color:white;
+}
+a:active{
+    color:white;
+}
+a:visited{
+    color: white;
+}

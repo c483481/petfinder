@@ -1,0 +1,442 @@
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../font/Quicksand/Quicksand-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('../font/Comfortaa/Comfortaa-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(../gambar/Background/halamanUtama.jpg);
+    font-family: 'Quicksand';
+}
+
+/*navbar*/
+.container{
+    position: relative;
+    top: 60px;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    z-index: 2;
+    background-color: rgb(79,181,244);
+    justify-content: space-around;
+    padding: 20px;
+    font-size: 15px;
+}
+nav ul{
+    list-style: none;
+    flex: 1;
+    width: 18%;
+    justify-content: space-between;
+}
+nav ul li{
+    display: inline;
+    margin: 0px 10px;
+}
+.NamaUser{
+    flex: 1;
+    margin: 0px 10px;
+}
+.NamaUser h4 .nama{
+    font-family: 'Comfortaa';
+    text-decoration: underline;
+    font-size: 18px;
+}
+.NamaUser h4 span{
+    font-family: 'Quicksand';
+    font-size: 15px;
+}
+nav ul a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+.icon{
+    background-image: url(../gambar/Background/Icon.png);
+    background-repeat: no-repeat;
+    margin: 0px 10px;
+    flex: 1;
+    width: 200px;
+    height: 30px;
+}
+
+
+/* buat menunya */
+.menu{
+    display: none;
+    flex: 1;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+.menu input{
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -6px;
+    top: -5px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+.menu span{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+/* buat animasi saat click */
+.menu span:nth-child(2){
+    transform-origin: 0 0;
+}
+
+.menu span:nth-child(4){
+    transform-origin: 0 100%;
+}
+
+.menu input:checked ~ span:nth-child(2){
+    background-color: white;
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu input:checked ~ span:nth-child(3){
+    transform: scale(0);
+}
+
+
+.menu input:checked ~ span:nth-child(4){
+    background-color: white;
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+
+
+
+/* Pencarian */
+.pencarian{
+    position: relative;
+}
+.pencarian ul{
+    margin-top: 50px;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.js2 input{
+   margin-right: 15px;
+}
+/* button */
+
+.pencarian .button{
+    margin-top: 20px ;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+
+/* Isi */
+
+
+.Isi{
+    position: absolute;
+    background-color: rgba(230, 225, 225, 0.5);
+    margin-top: 30px;
+    margin-left: 10%;
+    width: 80%;
+    z-index: -3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.Isi.doggy{
+    flex-direction: column;
+}
+
+
+
+
+/* Desaind Gambar Isi */
+
+.card{
+    border: 1px solid black;
+    background-color: white;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    margin: 20px;
+}
+.Isi.doggy .card{
+    height: 50px;
+    width: 100%;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    display:flex;
+}
+
+.btn{
+    width: 70px;
+    height: 20px;
+    margin: auto;
+    text-align: center;
+    border: 1px solid purple;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.Isi.doggy .card .btn{
+    margin-right: 20px;
+    display: inline-block;
+}
+.card img{
+    margin-top: 10px;
+    border-radius: 5px;
+    width: 120px;
+    height: 120px;
+}
+.Isi.doggy .card img{
+    display:inline-block;
+    border-radius: 100%;
+    margin-top: 0;
+    margin-left: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+.Nama{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    line-height: 15px;
+}
+.Isi.doggy .Nama{
+    height: 30px;
+    margin-top: 2px;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    flex: 3;
+}
+.Nama p{
+    display: inline-block;
+    margin-top: 7px;
+}
+.btn a{
+    text-decoration: none;
+    color: black;
+}
+.btn a:visited{
+    color: black;
+}
+.btn a:active{
+    text-decoration: none;
+    color: black;
+}
+.btn:hover{
+    background-color: rgb(79,181,244);
+}
+.btn:active{
+    background-color: white;
+    box-shadow: 0 1px #666;
+    transform: translateY(4px); 
+}
+
+/* tampilan saat di click */
+.fullsize{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    z-index: 1;
+    background: rgba(0,0,0,0) ;
+    transition: 0.8s;
+    padding: 5% 0;
+    text-align: center;
+}
+
+.fullsize:target{
+    width: auto;
+    height: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.7) ;
+}
+
+.fullsize .konten table{
+    border-collapse: collapse;
+    margin: auto;
+}
+.fullsize .konten table td{
+    padding: 10px;
+}
+.fullsize .konten table td .kanan{
+    float: right;
+}
+.fullsize .konten table td .kiri{
+    float: left;
+}
+.fullsize .konten{
+    margin: auto;
+    overflow:auto;
+    height: 500px;
+    width: 60%;
+}
+.fullsize .konten.Anjing{
+    background-image: url(../gambar/Background/Anjing.png);
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+.fullsize .konten.Kucing{
+    background-image: url(../gambar/Background/Kucing.png);
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+.fullsize .konten.Burung{
+    background-image: url(../gambar/Background/Burung.png);
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+
+
+.fullsize img{
+    height: 180px;
+    margin-top: 15px;
+    box-shadow: 2px 2px 10px rgb(79,181,244, 0.8);
+}
+.fullsize .konten .stabil{
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    justify-content: space-around;
+}
+.fullsize:target img {
+    animation: zoom 1s;
+}
+
+/*ajax*/
+.panigation{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.panigation a{
+    font-family: 'Comfortaa';
+}
+@keyframes zoom {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+/* responsive layar */
+
+
+@media screen and (max-width: 1230px){
+    nav ul{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .menu{
+        display: flex;
+    }
+    nav ul{
+        display: flex;
+        position: absolute;
+        right: 0;
+        top: 60px;
+        width: 100%;
+        height: 300px;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(155, 194, 255);
+        z-index: -1;
+        opacity: 0;
+        transform: translatey(-100%);
+        transition: all 0.5s;
+    }
+    nav ul.muncul{
+        opacity: 1;
+        z-index: 1;
+        transform: translatey(0);
+    }
+    .pencarian ul{
+        text-align: center;
+        flex-direction: column;
+    }
+    .pencarian ul li{
+        margin: 7px;
+    }
+    .ngumpet{
+        position: relative;
+        z-index: -5;
+    }
+    .Isi .ngumpet{
+        width: 0;
+        height: 0;
+        overflow: hidden;
+    }
+    .btn.ngumpet{
+        width: 0;
+        height: 0;
+        overflow: hidden;
+    }
+}
+
+.active{
+    font-size: 20px;
+    font-weight: bold;
+    color: red !important;
+}
+
+.next{
+    display: inline-block;
+    margin: 5px;
+}
+
+.next:hover{
+    cursor: pointer;
+}
+
+.btn.dangger:hover{
+    background-color: red;
+}
+.btn:hover{
+    font-weight: bold;
+}
