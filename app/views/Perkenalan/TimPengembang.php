@@ -15,7 +15,7 @@
         <script src="../js/scriptNama.js"></script>
         <a href="https://drive.google.com/file/d/1rii8oFjbZWSAkPurLZtLbwHE-lhcQP95/view?usp=sharing">Link Video Presentasi:</a>
 
-        <a href="halamanUtama.php">Kembali</a>
+        <a href="<?= BASEURL ?>Umum">Kembali</a>
     </div>
 </body>
 
