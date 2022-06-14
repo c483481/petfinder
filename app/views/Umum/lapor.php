@@ -5,7 +5,7 @@
 <div class="bungkus">
     <div class="form">
         <table>
-            <form action="" method="POST" enctype="multipart/form-data">
+            <form action="<?= BASEURL . (($data['stat'] == '1') ? 'Umum' : 'Admin') ?>/lapor" method="POST" enctype="multipart/form-data">
                 <tr>
                     <td colspan="2">
                         <center>
