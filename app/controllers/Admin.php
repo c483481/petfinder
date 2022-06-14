@@ -7,6 +7,10 @@ class Admin extends Controller
             header("location: " . BASEURL);
             exit;
         }
+        if ($_SESSION['stat'] != '2') {
+            header("location: " . BASEURL);
+            exit;
+        }
     }
 
     public function index()
