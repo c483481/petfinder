@@ -115,7 +115,7 @@ class Admin extends Controller
         }
 
         $this->view('Template/mainAtas', $data);
-        $this->view('Umum/lapor');
+        $this->view('Umum/lapor', $data);
         $this->view('Template/mainBawah', $data);
     }
 
